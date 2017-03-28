@@ -1,4 +1,6 @@
 /* put your custom css here. */
+@import "https://cdn.rawgit.com/Vap0r1ze/Discord-Nitro-Badges/master/nitro.css";
+@import "https://cdn.rawgit.com/martmists/DiscordFonts/master/DiscordFonts.css";
 .app a {
 	color: #009682
 }
@@ -717,4 +719,36 @@
 
 .hljs-link {
   text-decoration: underline !important;
+}
+/*nitro badges*/
+.avatar-large[style*="a_"] + .comment .message.first .body .username-wrapper:after {
+    background: #009682;
+}
+.member.member-status > .avatar-small[style*="a_"] + .member-inner .member-username:after {
+    background: #009682;
+}
+.channel.channel-voice li.speaking .avatar-small[style*="a_"] {
+    border-color: #009682;
+}
+/*custom font*/
+@font-face {
+    font-family: monospace;
+    src: url("https://cdn.rawgit.com/Blackhippy/HpstrDiscord/0e399c0d/iosevka-regular.ttf");
+}
+.channel-members h2,
+.guild-channels span,
+.username-wrapper .user-name,
+.username, .nickname,
+.member-username-inner,
+.embed-author-name,
+.guild-header span,
+.member-role .name,
+.embed-field,
+.message-text, 
+.member-activity,
+.channel .channel-name,
+code,
+.timestamp, .tooltip{
+    font-family: monospace;
+    src: url("https://cdn.rawgit.com/Blackhippy/HpstrDiscord/0e399c0d/iosevka-regular.ttf");
 }
